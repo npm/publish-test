@@ -2,7 +2,7 @@
   "name": "@npmcli/publish-test",
   "version": "1.0.0",
   "description": "npm cli publish test package",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
     "test": "tap",
     "lint": "eslint \"**/*.js\"",
