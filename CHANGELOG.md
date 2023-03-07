@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1](https://github.com/npm/publish-test/compare/v1.0.0...v1.0.1) (2023-03-07)
+
+### Bug Fixes
+
+* [`3d0af1d`](https://github.com/npm/publish-test/commit/3d0af1d049df5f8178044c6f129abca651d83c8e) [#3](https://github.com/npm/publish-test/pull/3) return true from main export (#3) (@wraithgar)
+
 ## 1.0.0 (2023-03-07)
 
 ### Features
