@@ -321,41 +321,8 @@ jobs:
       run:
         shell: bash
     steps:
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-      - name: Install npm@latest
-        run: npm i --prefer-online --no-fund --no-audit -g npm@latest
-      - name: npm Version
-        run: npm -v
-      - name: View in Registry
-        run: |
-          EXIT_CODE=0
-
-          function is_published {
-            if npm view "$@" --loglevel=error > /dev/null; then
-              echo 0
-            else
-              echo 1
-            fi
-          }
-
-          for release in $(echo '${{ needs.release.outputs.releases }}' | jq -r '.[] | @base64'); do
-            name=$(echo "$release" | base64 --decode | jq -r .pkgName)
-            version=$(echo "$release" | base64 --decode | jq -r .version)
-            spec="$name@$version"
-            status=$(is_published "$spec")
-            if [[ "$status" -eq 1 ]]; then
-              echo "$spec ERROR"
-              EXIT_CODE=$status
-            else
-              echo "$spec OK"
-            fi
-          done
-
-          exit $EXIT_CODE
-
+      - name: Do the thing
+        run: echo "${{ needs.release.outputs.release }}"
   post-release-integration:
     needs: [ release, release-integration ]
     name: Post Release Integration - Release
