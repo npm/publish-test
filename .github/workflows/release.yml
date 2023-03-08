@@ -316,13 +316,17 @@ jobs:
     needs: release
     name: Release Integration
     if: needs.release.outputs.release
+    # TODO if template-oss config asks for it
+
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
     steps:
-      - name: Do the thing
-        run: echo "${{ needs.release.outputs.release }}"
+      - name: Deployment of release
+        run: |
+          gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/npm/publish-test/deployments -f ref='${{ fromJSON(needs.release.outputs.release).tagName }}' -f payload='${{needs.release.outputs.release}}' -f description='Deploy request from '
+
   post-release-integration:
     needs: [ release, release-integration ]
     name: Post Release Integration - Release
