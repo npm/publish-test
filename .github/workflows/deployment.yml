@@ -1,0 +1,17 @@
+name: Deployment
+
+on:
+  deployment:
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Test
+        run: |
+          echo Hi there
+          echo '${{ fromJSON(github) }}'
+          echo '${{ fromJSON(github.event) }}'
