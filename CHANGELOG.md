@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3](https://github.com/npm/publish-test/compare/v1.0.2...v1.0.3) (2023-03-08)
+
+### Bug Fixes
+
+* [`ce9ff21`](https://github.com/npm/publish-test/commit/ce9ff21d5fdb13c54e596cf36252ff11f6c51175) [#8](https://github.com/npm/publish-test/pull/8) add colon (#8) (@lukekarrys)
+
 ## [1.0.2](https://github.com/npm/publish-test/compare/v1.0.1...v1.0.2) (2023-03-08)
 
 ### Bug Fixes
