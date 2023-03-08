@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.4](https://github.com/npm/publish-test/compare/v1.0.3...v1.0.4) (2023-03-08)
+
+### Bug Fixes
+
+* [`540fd62`](https://github.com/npm/publish-test/commit/540fd626d9079b976325a7df5c3c5ccd50beae64) [#10](https://github.com/npm/publish-test/pull/10) deployment permissions (#10) (@lukekarrys)
+
 ## [1.0.3](https://github.com/npm/publish-test/compare/v1.0.2...v1.0.3) (2023-03-08)
 
 ### Bug Fixes
