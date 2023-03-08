@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.5](https://github.com/npm/publish-test/compare/v1.0.4...v1.0.5) (2023-03-08)
+
+### Bug Fixes
+
+* [`cfceaae`](https://github.com/npm/publish-test/commit/cfceaae79d9fd9ef4030047c063df5724f34354d) [#12](https://github.com/npm/publish-test/pull/12) stuff (@lukekarrys)
+
 ## [1.0.4](https://github.com/npm/publish-test/compare/v1.0.3...v1.0.4) (2023-03-08)
 
 ### Bug Fixes
