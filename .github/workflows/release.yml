@@ -322,6 +322,8 @@ jobs:
     defaults:
       run:
         shell: bash
+    permissions:
+      deployments: write
     steps:
       - name: Deployment of release
         env:
