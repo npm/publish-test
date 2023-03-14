@@ -325,11 +325,12 @@ jobs:
     permissions:
       deployments: write
     steps:
-      - name: Deployment of release
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: See what's what
         run: |
-          gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/npm/publish-test/deployments -f ref='${{ fromJSON(needs.release.outputs.release).tagName }}' -f payload='${{needs.release.outputs.release}}' -f description='Deploy request from '
+          git status
+          ls
+          npm -v
+          node -v
 
   post-release-integration:
     needs: [ release, release-integration ]
