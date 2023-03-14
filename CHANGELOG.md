@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/npm/publish-test/compare/v1.0.5...v1.1.0) (2023-03-14)
+
+### Features
+
+* [`ac5e231`](https://github.com/npm/publish-test/commit/ac5e23184b8f02cc7c54e7303bc7e0f1eff43e75) publish (@wraithgar)
+
+### Bug Fixes
+
+* [`c02834f`](https://github.com/npm/publish-test/commit/c02834f7f4076360520f6107e96f034cb0d9acc8) no uses (@wraithgar)
+* [`1c10157`](https://github.com/npm/publish-test/commit/1c10157b20df54aa4c7ae4a86191b50b1b49ddd4) indentation (@wraithgar)
+* [`23686b5`](https://github.com/npm/publish-test/commit/23686b52b53cc6af5423353e240f3c714a74a830) apply template (@wraithgar)
+* [`1617877`](https://github.com/npm/publish-test/commit/16178772d3e856812aa7a4647b2fc64c801b40c9) [#14](https://github.com/npm/publish-test/pull/14) gar test 1 (#14) (@wraithgar)
+
 ## [1.0.5](https://github.com/npm/publish-test/compare/v1.0.4...v1.0.5) (2023-03-08)
 
 ### Bug Fixes
