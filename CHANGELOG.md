@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/npm/publish-test/compare/v1.0.5...v1.0.6) (2023-03-14)
+
+### Bug Fixes
+
+* [`23686b5`](https://github.com/npm/publish-test/commit/23686b52b53cc6af5423353e240f3c714a74a830) apply template (@wraithgar)
+* [`1617877`](https://github.com/npm/publish-test/commit/16178772d3e856812aa7a4647b2fc64c801b40c9) [#14](https://github.com/npm/publish-test/pull/14) gar test 1 (#14) (@wraithgar)
+
 ## [1.0.5](https://github.com/npm/publish-test/compare/v1.0.4...v1.0.5) (2023-03-08)
 
 ### Bug Fixes
