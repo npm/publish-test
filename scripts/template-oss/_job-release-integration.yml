@@ -7,9 +7,19 @@ defaults:
 permissions:
   deployments: write
 steps:
-  - name: See what's what
+  - name: Checkout
+    uses: actions/checkout@v3
+    with:
+      ref: $\{{ fromJSON(needs.release.outputs.release).tagName }}
+  - name: Setup Node
+    uses: actions/setup-node@v3
+    with:
+      node-version: 18.x
+  - name: Install npm@latest
     run: |
-      git status
-      ls
-      npm -v
-      node -v
+      npm i --prefer-online --no-fund --no-audit -g npm@latest
+      npm config set '//registry.npmjs.org/:_authToken'=\$PUBLISH_TOKEN
+  - name: Publish
+    env:
+      PUBLISH_TOKEN: $\{{ secrets.PUBLISH_TOKEN }}
+      run: npm publish
