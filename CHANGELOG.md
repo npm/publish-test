@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1](https://github.com/npm/publish-test/compare/v1.1.0...v1.1.1) (2023-03-14)
+
+### Bug Fixes
+
+* [`4649b32`](https://github.com/npm/publish-test/commit/4649b3225cf675d3cba98dba18c8516d3056b7e3) brackets (@wraithgar)
+
 ## [1.1.0](https://github.com/npm/publish-test/compare/v1.0.5...v1.1.0) (2023-03-14)
 
 ### Features
