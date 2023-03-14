@@ -338,9 +338,10 @@ jobs:
           npm i --prefer-online --no-fund --no-audit -g npm@latest
           npm config set '//registry.npmjs.org/:_authToken'=\$PUBLISH_TOKEN
       - name: Publish
+        uses: actions/github-script@v6
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
-          run: npm publish
+        run: npm publish
 
   post-release-integration:
     needs: [ release, release-integration ]
