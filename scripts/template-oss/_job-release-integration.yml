@@ -18,7 +18,7 @@ steps:
   - name: Install npm@latest
     run: |
       npm i --prefer-online --no-fund --no-audit -g npm@latest
-      npm config set '//registry.npmjs.org/:_authToken'=\$PUBLISH_TOKEN
+      npm config set '//registry.npmjs.org/:_authToken'=\${PUBLISH_TOKEN}
   - name: Publish
     env:
       PUBLISH_TOKEN: $\{{ secrets.PUBLISH_TOKEN }}
