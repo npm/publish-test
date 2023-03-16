@@ -4,6 +4,7 @@ This is a test package for the npm cli to test publishing
 
 scripts/template-oss/ has components
 
+Hi there! this is part of the readme
 
 release payload (needs.release.outputs.release)
 
