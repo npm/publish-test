@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.2](https://github.com/npm/publish-test/compare/v1.1.1...v1.1.2) (2023-03-16)
+
+### Documentation
+
+* [`7ffee44`](https://github.com/npm/publish-test/commit/7ffee44231d646af74aacb345ff3ac4464b47059) [#18](https://github.com/npm/publish-test/pull/18) update readme (#18) (@wraithgar)
+
 ## [1.1.1](https://github.com/npm/publish-test/compare/v1.1.0...v1.1.1) (2023-03-14)
 
 ### Bug Fixes
