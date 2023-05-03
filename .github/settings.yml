@@ -11,25 +11,16 @@ repository:
 branches:
   - name: main
     protection:
+      required_status_checks: null
+      enforce_admins: true
       required_pull_request_reviews:
-        required_approving_review_count: 1
+        dismissal_restrictions: {}
         dismiss_stale_reviews: true
         require_code_owner_reviews: true
-      required_linear_history: false
+        required_approving_review_count: 1
+        require_last_push_approval: true
+        bypass_pull_request_allowances: {}
       restrictions:
         teams:
           - "npm/cli-team"
-      enforce_admins: true
-      required_status_checks: null
-  - name: latest
-    protection:
-      required_pull_request_reviews:
-        required_approving_review_count: 1
-        dismiss_stale_reviews: true
-        require_code_owner_reviews: true
       required_linear_history: false
-      restrictions:
-        teams:
-          - "npm/cli-team"
-      enforce_admins: true
-      required_status_checks: null
