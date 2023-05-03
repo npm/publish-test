@@ -23,6 +23,5 @@ branches:
       restrictions:
         apps: []
         users: []
-        teams:
-          - "npm/cli-team"
+        teams: ["npm/cli-team"]
       required_linear_history: false
