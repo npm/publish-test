@@ -21,6 +21,8 @@ branches:
         require_last_push_approval: true
         bypass_pull_request_allowances: {}
       restrictions:
+        apps: []
+        users: []
         teams:
           - "npm/cli-team"
       required_linear_history: false
